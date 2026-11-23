@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿int number = 1000000;
+byte[] bytes = BitConverter.GetBytes(number);
+Console.WriteLine($"Число: {number}");
+Console.Write("Байты: ");
+foreach (byte b in bytes) {
+Console.Write($"{b:X2} ");
+}
+Console.WriteLine();
